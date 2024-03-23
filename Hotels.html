@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <style>
+    /* Your existing styles */
+
+    header {
+      color: #ffffff;
+      font-size: 21px;
+      background-color: grey;
+      border: 2px white;
+      padding: 20px;
+    }
+
+    .nav-link:hover {
+      background-color: rgb(91, 90, 90);
+      border: white solid 2px;
+      color: white;
+    }
+
+    .home {
+      height: 100vh; /* Cover full viewport height */
+      width: 100%; /* Adjust width to match framework */
+      padding: 20px;
+      color: white;
+    }
+
+    .tels{
+      width: 250px;
+      height: 400px;
+    }
+
+    p{
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    h1{
+      font-weight: bold;
+    }
+
+    .container{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;  
+      grid-template-rows: auto auto;
+      text-align: center;  
+    }
+
+    @media screen and (max-width: 900px) {
+      .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr ; 
+        grid-template-rows: auto auto;
+        text-align: center;  
+        margin-left: 30px;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .container{
+        display: grid;
+        grid-template-columns: 1fr;  
+        grid-template-rows: auto;
+        text-align: center;  
+        margin-left: 8px;
+      }
+    } 
+
+
+    .hotel{
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    .bg {
+      background-image: url('hoy.jpg'); /* Replace 'background.jpg' with the path to your image */
+      background-size: cover; /* Cover the entire viewport */
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+    }
+
+    /* Add a new class for the grid background color */
+    .grid-bg {
+      background-color: rgba(229, 226, 226, 0.742); /* Adjust color and opacity as needed */
+      margin: 5px;
+    }
+
+    footer {
+      background-color: grey; 
+      clear: both;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bg">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">Tangub City</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item ">
+                <a class="nav-link" href="home page.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Tourist spot.html">Tourist Spot</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="Hotels.html">Hotels</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="hotel">
+      <div class="container">
+        <div class="border grid-bg"> <!-- Apply grid-bg class here -->
+          <p>PHG Pension House</p>
+          <p><img class="tels" src="images.jpeg" ></p>
+          <p><a href="https://www.google.com/maps/place/PHG+Pension/@8.0611,123.7460099,17z/data=!3m1!4b1!4m9!3m8!1s0x32544c5817793ffd:0x2ccc393aaa838a1!5m2!4m1!1i2!8m2!3d8.0610947!4d123.750618!16s%2Fg%2F11c5t0vk8g?entry=ttu">Location: Brgy. I, Tangub City</a></p>
+          <p><a href="#">Contact No: 0947-156-2816</a></p>
+          <p>Room rates:</p>
+          <ul>
+            <li>Ordenary Room range from P500.00 to P700.00</li>
+            <li>Airconditioned Room (Good for 2 pax) P600.00</li>
+            <li>Airconditioned Room (Good for 5 pax) P1000.00</li>
+          </ul>
+        </div>
+
+        <div class="border grid-bg" > <p>Cinderella's Hotel</p>
+          <p><img class="tels" src="images (1).jpeg" ></p>
+          <p> <a href="https://www.google.com/maps/place/Cinderella's+Hotel/@8.0629135,123.7426368,17z/data=!3m1!4b1!4m9!3m8!1s0x32544dac7c8410bf:0x912a4f9b4a12cdc4!5m2!4m1!1i2!8m2!3d8.0629082!4d123.7472449!16s%2Fg%2F11h7kvg8lj?entry=ttu">Location: Brgy. IV, Tangub City</a></p>
+          <p> <a href="#">Contact No: 09012-432-2172</a></p>
+          <p> Room rates:</p>
+          <p>
+            <ul>
+              <li>Standard Room: P950.00</li>
+              <li>Family Room: P2,700.00</li>
+              <li>Deluxe Room: P3,700.00</li>
+            </ul>
+          </p>
+      </div>
+      <div class="border grid-bg"> <p>Tangub City Hostel</p>
+        <p><img class="tels" src="FB_IMG_1709950654675.jpg" ></p>
+        <p> <a href="https://www.google.com/maps/place/City+Hostel+Office+-+City+Government+Of+Tangub/@8.0587662,123.7543706,17z/data=!3m1!4b1!4m6!3m5!1s0x32544cf644468c73:0x856013ad7ccd2673!8m2!3d8.0587609!4d123.7569509!16s%2Fg%2F1pztxpn_t?entry=ttu">Location: Brgy. Maloro, Tangub</a></p>
+        <p> <a href="#">Contact No: 09010-330-1937</a></p>
+        <p> Room rates:</p>
+        <p>
+          <ul>
+            <li>Room good for 2 pax: P1,500</li>
+            <li>Room good for 4 pax: P2,500</li>
+            <li>Dormitory Room: P300.00 per head</li>
+          </ul>
+        </p>
+    </div>
+    
+    <div class="border grid-bg"> <p>Moonlight Inn</p>
+    <p><img class="tels" src="in.jpeg" ></p>
+    <p> <a href="https://www.google.com/maps/place/Moonlight+Inn/@8.0580399,123.6328626,13z/data=!4m12!1m2!2m1!1s+P-2,+Tangub+City!3m8!1s0x32544ff0c5e26347:0x47296dca61222c9f!5m2!4m1!1i2!8m2!3d8.0580048!4d123.7049832!16s%2Fg%2F11n_z3r5qb?entry=ttu">Location: P-2, Tangub City</a></p>
+    <p> <a href="#">Contact: 0947-817-6685</a></p>
+    <p> Room rates:</p>
+    <p>
+      <ul>
+        <li>Double Sizxe Bed: Php 1,100.00 </li>
+        <li>Queen Size Bed: Php 1,350.00 </li>
+      </ul>
+    </p>
+    </div>
+    
+    
+    <div class="border grid-bg"> <p>Villa ROberta Pension House</p>
+    <p><img class="tels" src="villa.jpeg" ></p>
+    <p> <a href="https://www.google.com/maps/place/Villa+Roberta+Garden+Resort/@8.0797016,123.7370769,17z/data=!4m14!1m7!3m6!1s0x32544dafc4218339:0x60df2d185c02e8b0!2sVilla+Roberta+Garden+Resort!8m2!3d8.0796963!4d123.741685!16s%2Fg%2F11ddxwrzxc!3m5!1s0x32544dafc4218339:0x60df2d185c02e8b0!8m2!3d8.0796963!4d123.741685!16s%2Fg%2F11ddxwrzxc?entry=ttu">Location: Brgy. Manga, Tangub City</a></p>
+    <p> <a href="#">Contact: 0948-292-9743</a></p>
+    <p> Room rates:</p>
+    <p>
+    <ul>
+      <li>Family Room (Good for 4-6 pax): P2,500.00</li>
+      <li>Barkdahan Room(Good for 8-10 pax):<br> P3,500</li>
+      <li>Addition: P250 / foam</li>
+    </ul>
+    </p>
+    </div>
+      </div>
+    </div>
+
+    <footer id="contact">
+      <p class="text-center"> © 2023-2024 IPT4 | All Rights Reserved</p>
+    </footer>
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
